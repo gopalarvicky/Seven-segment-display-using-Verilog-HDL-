@@ -54,12 +54,14 @@ case(bcd)
     endcase
    end
   endmodule
+
+  
 output
 ![Screenshot 2024-09-28 082900](https://github.com/user-attachments/assets/09a92cb4-6c23-4b26-b9ae-e4e37e076051)
 
 Testbench for Seven-Segment Display:
 
-   module SEVENSEGMENT;
+module SEVENSEGMENT;
         reg [3:0] bcd;
         wire [6:0] seg;
         SEVEN_SEGMENT uut(
@@ -82,6 +84,8 @@ Testbench for Seven-Segment Display:
     #10 $stop;
     end
 endmodule
+
+
 output
  ![Screenshot 2024-09-28 091428](https://github.com/user-attachments/assets/d72d920f-6ee2-4c5c-b322-e35c774a88a7)
 
